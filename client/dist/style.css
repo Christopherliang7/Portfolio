@@ -1,27 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Neuton:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap");
 
-/* #F4ECE6 */
+/*
+  Tan: #E6DACE
+  Green: #CEE6CE
+  Blue: #CEDAE6
+  Pink: #E6CEE6
+*/
 
 body {
-  font-family: "Work Sans", Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  /* font-family: "Work Sans", Helvetica, sans-serif; */
+  /* font-family: 'Neuton', serif; */
   margin: 0;
   padding: 0;
   line-height: 1.6;
   color: #2c3e50;
 }
 
-h1 {
-  color: #2c3e50;
-  font-weight: 100;
-}
-
-.nav-container h1 {
-  cursor: pointer;
-}
-
-.nav-container h1:hover {
-  color: #E6DACE;
-}
+/* Utils */
 
 .flex {
   display: flex;
@@ -30,13 +28,96 @@ h1 {
   height: 100%;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  background-color: #F4ECE6;
+  color: #333;
+  box-shadow: -50px 50px 50px -50px rgb(0 0 0 / 20%);
+  padding: 20px;
+  margin: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  background: #F4ECE6;
+  color: black;
+  border: 1px solid #F4ECE6;
+  border-radius: 5px;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px white solid;
+  border: 0.5px rgb(192, 192, 192) solid;
+}
+
+.btn:hover {
+  transform: scale(.98);
+}
+
+.resume-btn:hover {
+  background-color: transparent;
+  border: 1px white solid;
+  border: 0.5px rgb(192, 192, 192) solid;
+}
+
+.contact-btn:hover {
+  background: #F4ECE6;
+  border: transparent;
+}
+
+/* Homepage & Naviation */
+
+h1 {
+  color: #2c3e50;
+  font-family: 'Neuton', serif;
+  font-size: 40px;
+  top: -5px;
+}
+
+.nav-container h1 {
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.nav-container h1:hover {
+  color: #E6DACE;
+}
+
+.title {
+  gap: 3px;
+}
+
+.title h1 {
+  font-size: 24px;
+}
+
+.title p {
+  color: grey;
+  font-size: 14px;
+  position: relative;
+}
+
 .navbar {
   background-color: #FFFFFF;
-  height: 80px;
+  height: 120px;
+  margin: 0 10px;
 }
 
 .navbar-options {
   display: flex;
+  font-size: 12.5px;
 }
 
 .navbar-options li {
@@ -51,10 +132,96 @@ h1 {
 }
 
 .nav-container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto; 
 }
 
 .navbar .flex {
   justify-content: space-between;
+}
+
+/* About Section */
+
+.about {
+  position: relative;
+  height: 750px;
+  background: linear-gradient(90deg, #E6DACE 40%, #FFFFFF 0%);
+}
+
+.about h1 {
+  font-size: 40px;
+}
+
+.about p {
+  margin: 20px 0;
+}
+
+.about .grid {
+  grid-template-columns: 55% 45%;
+  gap: 30px;
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto; 
+}
+
+.about-card {
+  position: relative;
+  height: 400px;
+  width: 250px;
+  left: 190px;
+  padding: 40px;
+  z-index: 100;
+}
+
+.about-card img,h1,p {
+  position: relative;
+}
+
+.about-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  left: 32px;
+  padding: 10px 0;
+}
+
+.about-card h1 {
+  left: 42px;
+  font-size: 24px;
+}
+
+.about-card p {
+  font-size: 16px;
+  left: 52px;
+}
+
+.about-text {
+  position: relative;
+  left: -50px;
+}
+
+.about-text h1 {
+  font-size: 54px;
+  margin: 0;
+}
+
+.about-text p {
+  font-size: 14px;
+}
+
+.about-buttons {
+  display: flex;
+  justify-content: start;
+}
+
+/* Programming Section */
+/* Photography Section */
+/* Contact Section */
+/* Footer Section */
+
+.footer {
+  background-color: #F4ECE6;
+  height: 200px;
 }
