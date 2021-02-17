@@ -1,17 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Nav } from './components/nav.jsx';
+import { Program } from './components/program.jsx';
+import { Photography } from './components/photography.jsx';
+import { Contact } from './components/contact.jsx'
 
-class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      someState: "value of state"
-    };
-  }
+const App = () => {
+  return (
+    <div className='app'>
 
-  render() {
-    return <div>Hello! Does this work?</div>;
-  }
-}
+      <div className='navbar'>
+        <div className='nav-container flex'>
+          <h1>Christoper Liang</h1>
+          <Nav />
+        </div>
+      </div>
+      
+    </div>
+  )
+};
 
 ReactDOM.render(<App />, document.getElementById("app"));
