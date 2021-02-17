@@ -3,10 +3,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap");
 
 /*
-  Tan: #E6DACE
-  Green: #CEE6CE
-  Blue: #CEDAE6
-  Pink: #E6CEE6
+Complimentary Green: #266150
+Green: #479e6f
+Blue: #5496f0
+Dark Tan: #E6DACE
+Light Tan: #F4ECE6
+White: #FFFFFF
+Lightly Off White: #FDF8F5
 */
 
 body {
@@ -16,7 +19,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  color: #2c3e50;
+  color: black;
 }
 
 /* Utils */
@@ -39,10 +42,21 @@ body {
 
 .card {
   background-color: #F4ECE6;
-  color: #333;
-  box-shadow: -50px 50px 50px -50px rgb(0 0 0 / 20%);
+  color: #4F4846;
+  box-shadow: -20px 12px 30px 1px rgb(0 0 0 / 20%);
   padding: 20px;
   margin: 10px;
+}
+
+.card::before, .card::after {
+  content: '';
+  position: absolute;
+  height: 50px;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+  background-color: white;
+  z-index: -1;
 }
 
 .btn {
@@ -50,16 +64,18 @@ body {
   padding: 10px 20px;
   margin: 0 10px;
   cursor: pointer;
-  background: #F4ECE6;
-  color: black;
-  border: 1px solid #F4ECE6;
+  background: #5496f0;
+  color: white;
+  border: 1px solid #5496f0;
   border-radius: 5px;
+  outline: none;
 }
 
 .btn-outline {
-  background-color: transparent;
+  background-color: #FFFFFF;
   border: 1px white solid;
   border: 0.5px rgb(192, 192, 192) solid;
+  color: black;
 }
 
 .btn:hover {
@@ -68,19 +84,21 @@ body {
 
 .resume-btn:hover {
   background-color: transparent;
-  border: 1px white solid;
+  border: 1px solid #FDF8F5;
   border: 0.5px rgb(192, 192, 192) solid;
+  color: black;
 }
 
 .contact-btn:hover {
-  background: #F4ECE6;
+  background: #5496f0;
   border: transparent;
+  color: white;
 }
 
 /* Homepage & Naviation */
 
 h1 {
-  color: #2c3e50;
+  color: black;
   font-family: 'Neuton', serif;
   font-size: 40px;
   top: -5px;
@@ -92,7 +110,7 @@ h1 {
 }
 
 .nav-container h1:hover {
-  color: #E6DACE;
+  color: #5496f0;
 }
 
 .title {
@@ -100,39 +118,59 @@ h1 {
 }
 
 .title h1 {
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .title p {
-  color: grey;
+  color: black;
   font-size: 14px;
   position: relative;
 }
 
 .navbar {
-  background-color: #FFFFFF;
-  height: 120px;
-  margin: 0 10px;
+  background-color: #F4ECE6;
+  position: fixed;
+  width: 100%;
+  height: 115px;
+  margin: 0 auto;
+  z-index: 101;
 }
 
 .navbar-options {
   display: flex;
-  font-size: 12.5px;
+  font-size: 14px;
 }
 
 .navbar-options li {
   list-style-type: none;
-  color: #2c3e50;
-  margin: 20px;
+  color: black;
+  margin: 15px;
   cursor: pointer;
+  position: relative;
+  top: 1px;
+}
+
+.navbar-options .contact {
+  position: relative;
+  top: -1px;
+  padding: 0px 5px;
+  background: #5496f0;
+  color: white;
+  border: 1px solid #5496f0;
+  border-radius: 5px;
+}
+
+.navbar-options .contact:hover {
+  background: transparent;
+  color: black;
 }
 
 .navbar-options li:hover {
-  color: #E6DACE;
+  color: #5496f0;
 }
 
 .nav-container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto; 
 }
 
@@ -143,13 +181,17 @@ h1 {
 /* About Section */
 
 .about {
-  position: relative;
-  height: 750px;
-  background: linear-gradient(90deg, #E6DACE 40%, #FFFFFF 0%);
+  position: absolute;
+  top: 115px;
+  bottom: 0px;
+  width: 100%;
+  background-image: url('./images/sunset.jpg');
+  background-repeat: no-repeat;
+  background-size: 40% 100%;
 }
 
 .about h1 {
-  font-size: 40px;
+  font-size: 60px;
 }
 
 .about p {
@@ -157,11 +199,12 @@ h1 {
 }
 
 .about .grid {
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 50% 50%;
   gap: 30px;
 }
 
 .about-container {
+  min-width: 800px;
   max-width: 1100px;
   margin: 0 auto; 
 }
@@ -169,46 +212,71 @@ h1 {
 .about-card {
   position: relative;
   height: 400px;
-  width: 250px;
-  left: 190px;
+  width: 245px;
+  left: 205px;
   padding: 40px;
   z-index: 100;
+  animation: fadeInFromBottom 1s ease-in;
 }
 
-.about-card img,h1,p {
+.about-card .card-img,h1,p {
   position: relative;
 }
 
-.about-card img {
-  width: 200px;
-  height: 200px;
+.card-img {
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
-  left: 32px;
+  left: 20px;
   padding: 10px 0;
 }
 
 .about-card h1 {
-  left: 42px;
-  font-size: 24px;
+  left: 35px;
+  font-size: 25px;
+  color: #4F4846;
 }
 
 .about-card p {
-  font-size: 16px;
-  left: 52px;
+  font-size: 14px;
+  left: 30px;
+  color: black;
+}
+
+.about-icons-list {
+  display: flex;
+  list-style-type: none;
+  position: relative;
+  bottom: -28px;
+  left: 55px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+  position: relative;
+  left: -32px;
+  top: 10px;
+}
+
+.icon:hover {
+  transform: scale(1.1);
 }
 
 .about-text {
   position: relative;
-  left: -50px;
+  left: -25px;
+  animation: fadeIn 1s ease-in;
 }
 
 .about-text h1 {
-  font-size: 54px;
+  font-size: 50px;
   margin: 0;
 }
 
 .about-text p {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .about-buttons {
@@ -221,7 +289,65 @@ h1 {
 /* Contact Section */
 /* Footer Section */
 
-.footer {
-  background-color: #F4ECE6;
-  height: 200px;
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0.0;
+    transform: translateY(1%);
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

@@ -1,4 +1,5 @@
 var path = require("path");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 var SRC_DIR = path.join(__dirname, "/client/src");
 var DIST_DIR = path.join(__dirname, "/client/dist");
 
@@ -7,6 +8,7 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: DIST_DIR,
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -29,4 +31,12 @@ module.exports = {
       },
     ],
   },
+  devServer: {
+    historyApiFallback: true,
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'app/index.html'
+    })
+  ]
 };
