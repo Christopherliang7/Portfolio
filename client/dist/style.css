@@ -95,6 +95,13 @@ body {
   color: white;
 }
 
+.about, .projects, .resume {
+  position: absolute;
+  top: 115px;
+  bottom: 0px;
+  width: 100%;
+}
+
 /* Homepage & Naviation */
 
 h1 {
@@ -181,11 +188,7 @@ h1 {
 /* About Section */
 
 .about {
-  position: absolute;
-  top: 115px;
-  bottom: 0px;
-  width: 100%;
-  background-image: url('./images/sunset.jpg');
+  background-image: url('./images/photos/sunset.jpg');
   background-repeat: no-repeat;
   background-size: 40% 100%;
 }
@@ -284,7 +287,9 @@ h1 {
   justify-content: start;
 }
 
-/* Programming Section */
+/* Projects Section */
+
+
 /* Photography Section */
 /* Contact Section */
 /* Footer Section */

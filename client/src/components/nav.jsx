@@ -24,7 +24,7 @@ export const Nav = () => {
             <Link 
               to='/projects'
               style={{ textDecoration: 'none' }}>
-              <li>Programming</li>
+              <li>Projects</li>
             </Link>
             <Link 
               to='/life'
