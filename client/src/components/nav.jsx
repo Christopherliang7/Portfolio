@@ -7,8 +7,12 @@ export const Nav = () => {
       <div className='navbar'>
         <div className='nav-container flex'>
           <div className='title grid'>
-            <h1>Christoper Liang</h1>
-            <p>/ Developer & Photographer</p>
+            <Link
+              to='/' 
+              style={{ textDecoration: 'none' }}>
+              <h1>Christoper Liang</h1>
+            </Link>
+            <p>/ Software Engineer</p>
           </div>
           <ul className='navbar-options'>
             <Link 
@@ -26,11 +30,11 @@ export const Nav = () => {
               style={{ textDecoration: 'none' }}>
               <li>Projects</li>
             </Link>
-            <Link 
+            {/* <Link 
               to='/life'
               style={{ textDecoration: 'none' }}>
               <li>Life</li>
-            </Link>
+            </Link> */}
             <Link  
               to='/contact'
               style={{ textDecoration: 'none' }}>

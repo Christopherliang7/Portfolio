@@ -2,7 +2,14 @@ import React from 'react';
 
 export const Photography = () => {
   return (
-    <div>
+    <div className='photography'>
+      <div>Life</div>
+      <div>Life</div>
+      <div>Life</div>
+      <div>Life</div>
+      <div>Life</div>
+      <div>Life</div>
+      <div>Life</div>
       <div>Life</div>
     </div>
   )

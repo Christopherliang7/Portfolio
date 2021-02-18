@@ -64,9 +64,9 @@ body {
   padding: 10px 20px;
   margin: 0 10px;
   cursor: pointer;
-  background: #5496f0;
+  background: #266150;
   color: white;
-  border: 1px solid #5496f0;
+  border: 1px solid #266150;
   border-radius: 5px;
   outline: none;
 }
@@ -90,12 +90,12 @@ body {
 }
 
 .contact-btn:hover {
-  background: #5496f0;
+  background: #266150;
   border: transparent;
   color: white;
 }
 
-.about, .projects, .resume {
+.about, .projects, .resume, .contact-container {
   position: absolute;
   top: 115px;
   bottom: 0px;
@@ -117,7 +117,7 @@ h1 {
 }
 
 .nav-container h1:hover {
-  color: #5496f0;
+  color: #266150;
 }
 
 .title {
@@ -161,9 +161,9 @@ h1 {
   position: relative;
   top: -1px;
   padding: 0px 5px;
-  background: #5496f0;
+  background: #266150;
   color: white;
-  border: 1px solid #5496f0;
+  border: 1px solid #266150;
   border-radius: 5px;
 }
 
@@ -173,7 +173,7 @@ h1 {
 }
 
 .navbar-options li:hover {
-  color: #5496f0;
+  color: #266150;
 }
 
 .nav-container {
@@ -243,7 +243,7 @@ h1 {
 .about-card p {
   font-size: 14px;
   left: 30px;
-  color: black;
+  color: #266150;
 }
 
 .about-icons-list {
@@ -290,20 +290,17 @@ h1 {
 /* Resume Section */
 
 .resume {
-  background-color: #FDF8F5;
+  background-color: #266150;
   overflow: scroll;
   overflow-x: hidden;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 .resume-img {
   display: block;
   padding: 0;
   margin: 0 auto;
-  max-width: 70%;
-  
+  min-width: 700px;
+  max-width: 60%;
   position: relative;
   top: 40px;
 }
@@ -312,15 +309,15 @@ h1 {
   display: block;
   margin: 0 auto;
   position: fixed;
-  bottom: 100px;
-  right: 44vw;
+  bottom: 50px;
+  right: 45vw;
 
   /* Specific Button Cosmetics */
   color: white;
   padding: 10px 20px;
-  background: #5496f0;
+  background: #266150;
   cursor: pointer;
-  border: 1px solid #5496f0;
+  border: 1px solid #266150;
   border-radius: 30px;
   outline: none;
   text-decoration: none;
@@ -328,7 +325,44 @@ h1 {
 }
 
 /* Projects Section */
-/* Photography Section */
+
+.projects {
+  background-color: #266150;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.project-info {
+  color: white;
+}
+
+.project-cards{
+  height: 40%;
+  width: 75%;
+  margin: 0 auto;
+  padding: 40px 0;
+  gap: 10px;
+}
+
+.project-img {
+  max-height: 340px;
+  max-width: 420px;
+  
+}
+
+.project-title {
+  font-size: 16px;
+}
+.project-role {
+  font-size: 14px;
+}
+.project-tech {
+  font-size: 14px;
+}
+.project-description {
+  font-size: 14px;
+}
+
 /* Contact Section */
 
 /* Animations */
