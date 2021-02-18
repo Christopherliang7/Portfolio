@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const { response } = require("express");
 const path = require('path');
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 app.use(bodyParser.json());
@@ -16,6 +16,6 @@ app.get('*', (req, res) => {
   });
 });
 
-app.listen(port, () => {
-  console.log(`App is running at http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`App is running at PORT: ${PORT}`);
 });
