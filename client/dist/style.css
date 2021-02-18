@@ -240,6 +240,18 @@ h1 {
   color: #4F4846;
 }
 
+.about-card h1::after {
+  content: '';
+  position: absolute;
+  left: 40%;
+  bottom: -13px;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 100px;
+  border-radius: 2px;
+  background-color: #266150;
+}
+
 .about-card p {
   font-size: 14px;
   left: 30px;
@@ -364,6 +376,31 @@ h1 {
 }
 
 /* Contact Section */
+.contact-grid {
+  background-image: url('./images/photos/sunset.jpg');
+  background-repeat: no-repeat;
+  background-size: 40% 100%;
+}
+
+.field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  background-color: rgba(230, 230, 230, 0.6);
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: .3s;
+}
+
+.field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.field:focus {
+  background-color: #FFFFFF;
+  border: 2px solid rgba(30, 85, 250, 0.47);
+}
 
 /* Animations */
 @keyframes slideInFromLeft {
