@@ -358,8 +358,10 @@ h1 {
 }
 
 .project-img {
-  max-height: 340px;
-  max-width: 380px;
+  min-height: 340px;
+  min-width: 380px;
+  max-height: 380px;
+  max-width: 500px;
 }
 
 .project-title {
@@ -383,7 +385,7 @@ h1 {
 }
 
 .field {
-  width: 100%;
+  width: 90%;
   padding: 0.5rem 1rem;
   outline: none;
   border: 2px solid rgba(0, 0, 0, 0);
@@ -464,3 +466,59 @@ h1 {
     transform: translateX(0);
   }
 }
+
+/* Responsiveness */
+@media(max-width: 1087px) {
+  .nav-container {
+    margin: 0 50px;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-card {
+    top: 70px;
+    left: 0px;
+  }
+  .about {
+    background-image: url('./images/photos/sunset.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .about-text {
+    left: 0px;
+    color: black;
+    text-align: center;
+    padding: 0 70px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 340px;
+  }
+  .about-text h1 {
+    color: black;
+    margin-top: 20px;
+  }
+  .about-buttons {
+    height: 0%;
+    padding: 15px 0;
+  }
+  .field {
+    width: 500px;
+  }
+  .submit-btn {
+    margin-bottom: 15px;
+  }
+  .project-cards {
+    display: flex;
+    flex-direction: column;
+    padding: 200px 0;
+  }
+
+}
+
+/* @media(max-width: 500px) {} */

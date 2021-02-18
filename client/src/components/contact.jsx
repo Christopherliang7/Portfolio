@@ -47,7 +47,7 @@ export const Contact = () => {
             name='message'/>
           <input 
             type="submit" 
-            className='btn'/>
+            className='btn submit-btn'/>
         </form>
       </div>
     </div>

@@ -9,8 +9,8 @@ export const codeprojects = [
   {
     title: 'Portfolio',
     role: 'Software Engineer',
-    technologies: 'JavaScript | React (Hooks, Router) | CSS | Heroku',
-    description: 'Portfolio was built to showcase my work including coding projects and photography.',
+    technologies: 'JavaScript | React (Hooks, Router) | CSS | AWS',
+    description: 'Portfolio was built to showcase my work including coding projects and photography. Still in progress.',
     image: './images/projects/Portfolio.png'
   },
   {
