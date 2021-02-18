@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Nav } from './components/nav.jsx';
 import { About } from './components/about.jsx';
 import { Projects } from './components/projects.jsx';
-import { Photography } from './components/photography.jsx';
+// import { Photography } from './components/photography.jsx';
 import { Contact } from './components/contact.jsx'
 import { Resume } from './components/resume.jsx'
 
