@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "personal portfolio",
   "main": "index.js",
+  "engines": {
+    "node": "12.18.4",
+    "npm": "6.14.6"
+  },
   "scripts": {
     "start": "nodemon server/index.js",
     "dev": "webpack -d --watch"
