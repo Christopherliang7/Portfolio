@@ -7,7 +7,6 @@ import { Projects } from './components/projects.jsx';
 import { Photography } from './components/photography.jsx';
 import { Contact } from './components/contact.jsx'
 import { Resume } from './components/resume.jsx'
-import { Footer } from './components/footer.jsx'
 
 const App = () => {
   return (
@@ -23,7 +22,6 @@ const App = () => {
             <Route path='/contact' exact component={Contact}/>
           </Switch>
         </div>
-        <Footer />
       </div>
     </Router>
   )

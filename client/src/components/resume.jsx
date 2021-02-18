@@ -1,26 +1,20 @@
-import React from 'react';
-import { experiences, education, skills } from '../data/experience.js'
+import React, { useState } from "react";
 
 export const Resume = () => {
+  const [button, setButton] = useState(false);
   return (
-    <div className='resume'>
-
-      <div className='experience-list'>
-        {experiences.map((experience) => {
-          return (
-            <p>{experience.company}</p>
-          )
-        })}
+      <div 
+      className="resume"
+      onMouseMove={() => setButton(true)}
+      onClick={() => setButton(false)}>
+        <img 
+          className="resume-img" 
+          src="./images/resume.png" 
+          alt="resume" />
+        {button === true 
+          ? <a className="resume-dl" href="./images/christopher-liang-resume.pdf" download>Download</a>
+          : <></>
+        }
       </div>
-
-      <div className='education-list'>
-        {education.map((education) => {
-          return (
-            <p>{education.school}</p>
-          )
-        })}
-      </div>
-
-    </div>
-  )
-}
+  );
+};

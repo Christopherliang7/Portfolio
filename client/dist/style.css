@@ -287,12 +287,49 @@ h1 {
   justify-content: start;
 }
 
+/* Resume Section */
+
+.resume {
+  background-color: #FDF8F5;
+  overflow: scroll;
+  overflow-x: hidden;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.resume-img {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 70%;
+  
+  position: relative;
+  top: 40px;
+}
+
+.resume-dl {
+  display: block;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 100px;
+  right: 44vw;
+
+  /* Specific Button Cosmetics */
+  color: white;
+  padding: 10px 20px;
+  background: #5496f0;
+  cursor: pointer;
+  border: 1px solid #5496f0;
+  border-radius: 30px;
+  outline: none;
+  text-decoration: none;
+  animation: fadeIn 1s ease-in;
+}
+
 /* Projects Section */
-
-
 /* Photography Section */
 /* Contact Section */
-/* Footer Section */
 
 /* Animations */
 @keyframes slideInFromLeft {
@@ -333,10 +370,10 @@ h1 {
 
 @keyframes fadeIn {
   0% {
-    opacity: 0.5;
+    opacity: 0;
   }
   50% {
-    opacity: 0.8;
+    opacity: 1;
   }
   100% {
     opacity: 1;
