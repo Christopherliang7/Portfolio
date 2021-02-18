@@ -10,7 +10,8 @@ export const Nav = () => {
             <Link
               to='/' 
               style={{ textDecoration: 'none' }}>
-              <h1>Christoper Liang</h1>
+              <h1 className='web-title'>Christopher Liang</h1>
+              <h1 className='mobile-title'>CL.</h1>
             </Link>
             <p>/ Software Engineer</p>
           </div>

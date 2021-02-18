@@ -17,7 +17,7 @@ export const codeprojects = [
     title: 'Catwalk',
     role: 'Software Engineer',
     technologies: 'JavaScript | React | Redux | CSS | AWS EC2',
-    description: "Project Catwalk is an E-commerce Clothing Store with features including Product Overview, Related Products, Questions & Answers, and Ratings & Reviews. I worked in an agile team of four software engineers where I was responsible for Related Products. Related Products required custom components for Carousels, Cards, and Comparison Modal that compared the features of selected product with overview product. This component also required complex functions containing multiple API calls where I utilized loops with a combination of async/ await and promise all. Carousels were built leveraging React's create reference for a designated width & smooth scrolling of pixels.",
+    description: "Project Catwalk is an E-commerce Clothing Store with features including Product Overview, Related Products, Questions & Answers, and Ratings & Reviews. Custom components were built for Carousels, Cards, and Comparison Modal. Complex functions were built containing multiple API calls utilizing loops, async/ await and promise all. Carousels were built leveraging React's create reference for a designated width & smooth scrolling of pixels.",
     image: './images/projects/relatedproducts.gif'
   },
   {
@@ -41,5 +41,4 @@ export const codeprojects = [
     description: 'WordBeater is a one-day project built with Vanilla JavaScript to practice DOM traversal and manipulation. This is a speed typing game featuring score keeping, local storage for storing the highest scores, and levels of difficulty.',
     image: 'https://raw.githubusercontent.com/Christopherliang7/Speed-Typer-Game/master/demo.gif'
   },
-  
 ]
