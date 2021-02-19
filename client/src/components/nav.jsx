@@ -6,36 +6,23 @@ export const Nav = () => {
     <div>
       <div className='navbar'>
         <div className='nav-container flex'>
-          <div className='title grid'>
-            <Link
-              to='/' 
-              style={{ textDecoration: 'none' }}>
-              <h1 className='web-title'>Christopher Liang</h1>
-              <h1 className='mobile-title'>CL.</h1>
-            </Link>
-            <p>/ Software Engineer</p>
-          </div>
+          <Link
+            to='/' 
+            style={{ textDecoration: 'none' }}>
+            <h1>CL.</h1>
+          </Link>
           <ul className='navbar-options'>
             <Link 
               to='/' 
               style={{ textDecoration: 'none' }}>
               <li>About Me</li>
             </Link>
-            <Link 
-              to='/resume'
-              style={{ textDecoration: 'none' }}>
-              <li>Resume</li>
-            </Link>
+            <a href="./images/christopher-liang-resume.pdf" target='_blank'><li>Resume</li></a>
             <Link 
               to='/projects'
               style={{ textDecoration: 'none' }}>
               <li>Projects</li>
             </Link>
-            {/* <Link 
-              to='/life'
-              style={{ textDecoration: 'none' }}>
-              <li>Life</li>
-            </Link> */}
             <Link  
               to='/contact'
               style={{ textDecoration: 'none' }}>

@@ -13,9 +13,13 @@ export const About = () => {
           <h1>Hello!</h1>
           <p>My name is Christopher and I'm a Software Engineer.</p>
           <div className="about-buttons flex">
-            <Link to="/resume">
-              <button className="btn resume-btn">Resume</button>
-            </Link>
+            <a 
+              href="./images/christopher-liang-resume.pdf" 
+              target='_blank'>
+                <button 
+                  className="btn resume-btn">
+                    Resume</button>
+            </a>
             <Link to="/contact">
               <button className="btn contact-btn btn-outline">Contact</button>
             </Link>

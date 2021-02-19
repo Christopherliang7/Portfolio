@@ -172,8 +172,8 @@ h1 {
 }
 
 .navbar-options .contact:hover {
-  background: transparent;
-  color: black;
+  transform: scale(1.05);
+  color: white;
 }
 
 .navbar-options li:hover {
@@ -285,7 +285,7 @@ h1 {
 .about-text {
   position: relative;
   left: -25px;
-  animation: fadeIn 1s ease-in;
+  /* animation: fadeIn 1s ease-in; */
 }
 
 .about-text h1 {
@@ -304,6 +304,11 @@ h1 {
 
 /* Resume Section */
 
+.navbar-options a {
+  text-decoration: none;
+}
+
+/* 
 .resume {
   background-color: #266150;
   overflow: scroll;
@@ -326,10 +331,10 @@ h1 {
   margin: 0 auto;
   position: fixed;
   bottom: 50px;
-  right: 45vw;
+  right: 45vw; */
 
   /* Specific Button Cosmetics */
-  color: white;
+  /* color: white;
   padding: 10px 20px;
   background: #266150;
   cursor: pointer;
@@ -338,7 +343,7 @@ h1 {
   outline: none;
   text-decoration: none;
   animation: fadeIn 1s ease-in;
-}
+} */
 
 /* Projects Section */
 
