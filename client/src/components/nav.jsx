@@ -18,7 +18,7 @@ export const Nav = () => {
             <Link 
               to='/' 
               style={{ textDecoration: 'none' }}>
-              <li>About Me</li>
+              <li>About</li>
             </Link>
 
             <Link 
