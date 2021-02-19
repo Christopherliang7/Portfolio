@@ -3,15 +3,8 @@ export const codeprojects = [
     title: 'Atelier API',
     role: 'Software Engineer',
     technologies: 'Node | Express | MySQL | Redis | Docker | AWS EC2 | Loader.io | Artillery.io',
-    description: 'Atelier is an API capable of handling web scale production with scalability. Atelier contains millions of rows in data that was cleaned through leveraging Node Streams. Queries were optimized with indexing, subqueries, and JSON aggregation. Connection Pooling and Redis in-memory caching were implemented to increase throughput. Overall, throughput was increased by over 120% with an average latency of 15 ms for 3200 requests per second. The containerized project was deployed utilizing Docker and AWS.',
+    description: 'Atelier is an API containing millions of rows in data, capable of handling web scale production with scalability. Node Streams to optimize ETL timeline. Queries optimized with indexing, subqueries, and JSON aggregation. Connection Pooling and Redis in-memory caching were implemented to increase throughput. Overall results show 120% increase in throughput, with an average latency of 15ms per 3200 requests/sec. Containerized with docker and deployed with AWS.',
     image: './images/projects/atelier.png'
-  },
-  {
-    title: 'Portfolio',
-    role: 'Software Engineer',
-    technologies: 'JavaScript | React (Hooks, Router) | CSS | AWS',
-    description: 'Portfolio was built to showcase my work including coding projects and photography. Still in progress.',
-    image: './images/projects/Portfolio.png'
   },
   {
     title: 'Catwalk',
@@ -26,6 +19,13 @@ export const codeprojects = [
     technologies: 'JavaScript | React (Hooks, Context) | Sass | MongoDB | Mongoose | AWS EC2',
     description: 'Apartment Hunt is a NYC Apartment Rental application where I built autocomplete & geolocation search, a listings page of available apartments, Google Maps with light/dark modes, and custom markers. React Context was implemented for cleaner data flow. Sass was implemented for cleaner code readability. The application is also responsive and compatible with tablet and mobile.',
     image: './images/projects/apartmenthunt.png'
+  },
+  {
+    title: 'Portfolio',
+    role: 'Software Engineer',
+    technologies: 'TypeScript | React (Hooks, Router) | Node | Express',
+    description: 'Portfolio built to showcase who I am and my work. Still in progress.',
+    image: './images/projects/Portfolio.png'
   },
   {
     title: 'The Conversative Whale',

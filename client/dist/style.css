@@ -14,8 +14,6 @@ Lightly Off White: #FDF8F5
 
 body {
   font-family: 'Poppins', sans-serif;
-  /* font-family: "Work Sans", Helvetica, sans-serif; */
-  /* font-family: 'Neuton', serif; */
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -28,7 +26,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
 }
 
 .grid {
@@ -40,23 +37,28 @@ body {
   height: 100%;
 }
 
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 20px 20px;
+  grid-template-areas:
+    "project-img project-info"
+    "project-img project-info"
+    "project-img project-info"
+    "project-img project-info"
+    "project-img project-info"
+    "project-img project-info"
+  ;
+  align-items: center;
+}
+
 .card {
   background-color: #F4ECE6;
   color: #4F4846;
   box-shadow: -20px 12px 30px 1px rgb(0 0 0 / 20%);
   padding: 20px;
   margin: 10px;
-}
-
-.card::before, .card::after {
-  content: '';
-  position: absolute;
-  height: 50px;
-  bottom: 0px;
-  right: 0;
-  left: 0;
-  background-color: white;
-  z-index: -1;
 }
 
 .btn {
@@ -114,10 +116,11 @@ h1 {
 .nav-container h1 {
   cursor: pointer;
   font-weight: bolder;
+  color: #266150;
 }
 
 .nav-container h1:hover {
-  color: #266150;
+  color: white;
 }
 
 .title {
@@ -126,16 +129,6 @@ h1 {
 
 .title h1 {
   font-size: 30px;
-}
-
-.title p {
-  color: black;
-  font-size: 14px;
-  position: relative;
-}
-
-.mobile-title {
-  display: none;
 }
 
 .navbar {
@@ -154,7 +147,7 @@ h1 {
 
 .navbar-options li {
   list-style-type: none;
-  color: black;
+  color: #266150;
   margin: 15px;
   cursor: pointer;
   position: relative;
@@ -177,12 +170,13 @@ h1 {
 }
 
 .navbar-options li:hover {
-  color: #266150;
+  color: white;
 }
 
 .nav-container {
   max-width: 1000px;
-  margin: 0 auto; 
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .navbar .flex {
@@ -195,6 +189,8 @@ h1 {
   background-image: url('./images/photos/sunset.jpg');
   background-repeat: no-repeat;
   background-size: 40% 100%;
+  overflow: scroll;
+  overflow-x: auto;
 }
 
 .about h1 {
@@ -207,17 +203,16 @@ h1 {
 
 .about .grid {
   grid-template-columns: 50% 50%;
-  gap: 30px;
 }
 
 .about-container {
   max-width: 1100px;
-  margin: 0 auto; 
+  margin: 0 auto;
+  justify-items: flex-end;
+  align-items: center;
 }
 
 .about-card {
-  position: relative;
-  left: 205px;
   height: 400px;
   width: 245px;
   padding: 40px;
@@ -241,18 +236,6 @@ h1 {
   left: 35px;
   font-size: 25px;
   color: #4F4846;
-}
-
-.about-card h1::after {
-  content: '';
-  position: absolute;
-  left: 40%;
-  bottom: -13px;
-  transform: translateX(-50%);
-  height: 3px;
-  width: 100px;
-  border-radius: 2px;
-  background-color: #266150;
 }
 
 .about-card p {
@@ -282,11 +265,10 @@ h1 {
   transform: scale(1.1);
 }
 
-.about-text {
+/* .about-text {
   position: relative;
   left: -25px;
-  /* animation: fadeIn 1s ease-in; */
-}
+} */
 
 .about-text h1 {
   font-size: 50px;
@@ -294,7 +276,7 @@ h1 {
 }
 
 .about-text p {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .about-buttons {
@@ -308,43 +290,6 @@ h1 {
   text-decoration: none;
 }
 
-/* 
-.resume {
-  background-color: #266150;
-  overflow: scroll;
-  overflow-x: hidden;
-}
-
-.resume-img {
-  display: block;
-  padding: 0;
-  margin: 0 auto;
-  min-width: 700px;
-  max-width: 60%;
-  position: relative;
-  top: 40px;
-  animation: fadeInFromBottom 1s ease-in;
-}
-
-.resume-dl {
-  display: block;
-  margin: 0 auto;
-  position: fixed;
-  bottom: 50px;
-  right: 45vw; */
-
-  /* Specific Button Cosmetics */
-  /* color: white;
-  padding: 10px 20px;
-  background: #266150;
-  cursor: pointer;
-  border: 1px solid #266150;
-  border-radius: 30px;
-  outline: none;
-  text-decoration: none;
-  animation: fadeIn 1s ease-in;
-} */
-
 /* Projects Section */
 
 .projects {
@@ -357,30 +302,29 @@ h1 {
   color: white;
 }
 
-.project-cards{
-  height: 45%;
-  width: 75%;
-  margin: 0 auto;
-  padding: 40px 0;
-  gap: 10px;
+.project-cards {
+  width: 70%;
+  margin: 60px auto;
+  padding: 10px;
 }
 
 .project-img {
   max-height: 380px;
-  max-width: 500px;
+  max-width: 480px;
 }
 
 .project-title {
   font-size: 18px;
 }
-.project-role {
-  font-size: 14px;
-}
+
 .project-tech {
   font-size: 14px;
 }
+
 .project-description {
   font-size: 13px;
+  padding: 10px 0;
+  margin: 10px 0;
 }
 
 /* Contact Section */
@@ -411,41 +355,6 @@ h1 {
 }
 
 /* Animations */
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInFromTop {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInFromBottom {
-  0% {
-    transform: translateY(10%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 
 @keyframes fadeIn {
   0% {
@@ -475,50 +384,31 @@ h1 {
 
 /* Responsiveness */
 @media(max-width: 1087px) {
-  .web-title {
-    display: none;
-  }
-  
-  .title p {
-    display: none;
-  }
-
-  .mobile-title {
-    display: inline;
-  }
-
-  .nav-container {
-    margin: 0 50px;
-  }
 
   .about-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-  .about-card {
-    top: 70px;
-    left: 0px;
+    position: relative;
+    top: 110px;
   }
 
   .about {
-    background-image: url('./images/photos/sunset.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-image: none;
+    background-color: white;
   }
 
   .about-text {
     color: black;
-    text-align: center;
-    padding: 0 70px;
-    margin: 0 20px;
+    margin: 10px 10px 0 10px;
+    padding: 10px 10px 0 10px;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 340px;
+    text-align: center;
   }
 
   .about-text h1 {
@@ -530,9 +420,9 @@ h1 {
     height: 0%;
     padding: 15px 0;
   }
-
+  
   .field {
-    width: 500px;
+    width: 100%;
   }
 
   .submit-btn {
@@ -542,31 +432,23 @@ h1 {
   .project-cards {
     display: flex;
     flex-direction: column;
-    padding: 200px 0;
   }
 }
 
 
 
 @media(max-width: 640px) {
+  
   .about {
-    background-image: url(./images/photos/sunset.jpg);
+    background-color: #F4ECE6;
+  }
+
+  .card {
+    box-shadow: none;
+  }
+
+  .field {
     width: 100%;
-  }
-
-  .about-card {
-    position: relative;
-    left: -90px;
-    top: 170px;
-  }
-
-  .about-text {
-    width: 51%;
-    padding: 0;
-    margin: 0;
-  }
-
-  .resume-img {
-    min-width: 600px;
+    background-color: white;
   }
 }
