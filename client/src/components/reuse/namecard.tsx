@@ -1,13 +1,15 @@
 import React from "react";
-import { Icons } from './icons.jsx';
+import Icons from './icons';
 
-export const Card = () => {
+function Card() {
   return (
     <div className="about-card card">
       <img className="card-img" src="./images/headshot.png" alt="Headshot" />
       <h1>Christopher Liang</h1>
-      <p>Developer and Photographer</p>
+      <p>Software Engineer</p>
       <Icons />
     </div>
   );
 };
+
+export default Card;

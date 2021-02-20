@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Icons = () => {
+function Icons() {
   return (
     <div className="about-icons">
       <div className="about-icons-list">
@@ -59,3 +59,5 @@ export const Icons = () => {
     </div>
   );
 };
+
+export default Icons;

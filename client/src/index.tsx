@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Nav } from './components/nav.jsx';
-import { About } from './components/about.jsx';
-import { Projects } from './components/projects.jsx';
-import { Contact } from './components/contact.jsx'
+import Nav from "./components/nav";
+import About from './components/about';
+import Projects from './components/projects';
+import Contact from './components/contact';
 
-const App = () => {
+function App() {
   return (
     <Router>
       <div className='app'>

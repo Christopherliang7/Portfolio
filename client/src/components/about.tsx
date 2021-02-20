@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Card } from './reuse/namecard.jsx';
+import Card from './reuse/namecard';
 
-export const About = () => {
+function About() {
   return (
     <div className="about">
       <div className="about-container grid">
@@ -39,3 +39,5 @@ export const About = () => {
     </div>
   );
 };
+
+export default About;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const Resume = () => {
+function Resume() {
   const [button, setButton] = useState(false);
   return (
       <div 
@@ -18,3 +18,5 @@ export const Resume = () => {
       </div>
   );
 };
+
+export default Resume;

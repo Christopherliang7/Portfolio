@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Projects = () => {
+function Projects() {
   return (
     <div className='projects'>
       <div className='project-cards gallery-grid'>
@@ -74,3 +74,5 @@ export const Projects = () => {
     </div>
   )
 }
+
+export default Projects;

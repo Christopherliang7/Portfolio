@@ -1,8 +1,8 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import { Card } from './reuse/namecard.jsx';
+import Card from './reuse/namecard';
 
-export const Contact = () => {
+function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -53,3 +53,5 @@ export const Contact = () => {
     </div>
   )
 }
+
+export default Contact;
