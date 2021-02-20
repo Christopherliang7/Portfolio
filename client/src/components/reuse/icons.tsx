@@ -1,6 +1,6 @@
 import React from "react";
 
-function Icons() {
+const Icons: React.FC = () => {
   return (
     <div className="about-icons">
       <div className="about-icons-list">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Projects() {
+const Projects: React.FC = () => {
   return (
     <div className='projects'>
       <div className='project-cards gallery-grid'>

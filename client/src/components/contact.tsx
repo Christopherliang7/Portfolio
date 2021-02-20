@@ -2,7 +2,7 @@ import React from 'react';
 import emailjs from 'emailjs-com';
 import Card from './reuse/namecard';
 
-function Contact() {
+const Contact: React.FC = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();

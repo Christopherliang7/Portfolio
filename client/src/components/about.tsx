@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Card from './reuse/namecard';
 
-function About() {
+const About: React.FC = () => {
   return (
     <div className="about">
       <div className="about-container grid">

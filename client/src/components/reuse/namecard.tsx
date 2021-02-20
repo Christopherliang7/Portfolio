@@ -1,7 +1,7 @@
 import React from "react";
 import Icons from './icons';
 
-function Card() {
+const Card: React.FC = () => {
   return (
     <div className="about-card card">
       <img className="card-img" src="./images/headshot.png" alt="Headshot" />

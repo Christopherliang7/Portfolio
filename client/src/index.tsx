@@ -6,7 +6,7 @@ import About from './components/about';
 import Projects from './components/projects';
 import Contact from './components/contact';
 
-function App() {
+const App: React.FC = () => {
   return (
     <Router>
       <div className='app'>

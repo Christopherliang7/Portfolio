@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-function Resume() {
-  const [button, setButton] = useState(false);
+const Resume: React.FC = () => {
+  const [button, setButton] = useState<boolean>(false);
   return (
       <div 
       className="resume"
